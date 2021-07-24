@@ -34,3 +34,9 @@ however, need to import CSS files directly to children
 
 you can create a component and wrap it around another one like a normal html tag, but it has to be configured:
 "props.children prop" - this built in prop is always passed to a component by default,?? remember to create classes in the wrapper component??
+
+-------- 04 State and Events -----------------
+
+on all built in HTML elements we have access to native DOM events. Instead of adding an event listener like in vanilla, we add a "prop" to the html element - an "attribute". All the props are "on+xyz" f ex onClick for click. Just the prop adds an event listener, then define what after the event. All the props want a function assigned but with no "()". We just point at it.
+
+State - to update DOM components after they've been rendered so they react to events etc. to do it> import {useState} from 'react'. Then INSIDE the component function we call 'useState()'. We pass it a value and it creates a "special" value and returns a function that we can call and assigne a value to that variable. useState() returns an ARRAY in which 1st value is the variable/value, 2nd is an updating function. Can put those in 2 variables by array destructuring.
