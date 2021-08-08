@@ -39,4 +39,14 @@ you can create a component and wrap it around another one like a normal html tag
 
 on all built in HTML elements we have access to native DOM events. Instead of adding an event listener like in vanilla, we add a "prop" to the html element - an "attribute". All the props are "on+xyz" f ex onClick for click. Just the prop adds an event listener, then define what after the event. All the props want a function assigned but with no "()". We just point at it.
 
-State - to update DOM components after they've been rendered so they react to events etc. to do it> import {useState} from 'react'. Then INSIDE the component function we call 'useState()'. We pass it a value and it creates a "special" value and returns a function that we can call and assigne a value to that variable. useState() returns an ARRAY in which 1st value is the variable/value, 2nd is an updating function. Can put those in 2 variables by array destructuring.
+State - to update DOM components after they've been rendered so they react to events etc. to do it> import {useState} from 'react'. Then INSIDE the component function we call 'useState()'. We pass it a value and it creates a "special" value and returns a function that we can call and assign a value to that variable. useState() returns an ARRAY in which 1st value is the variable/value, 2nd is an updating function. Can put those in 2 variables by array destructuring.
+event>variable and function returned>component updated
+Each component instance has its own state
+
+Hooks - Hooks are functions that let you “hook into” React state and lifecycle features from function components. Hooks don’t work inside classes — they let you use React without classes.
+
+even handler functions get the event value in function arguments
+
+possible to have multiple state pieces per component, can call useState multiple times, can use ONE state instead -> by passing an OBJECT as a value, and then have to update all values so they aren ot lost
+whenever you update state and have to depend on previous state
+React schedules state update so if u use the "bad" approach in line 19 of ExpenseForm, you may depend on an outdated state
