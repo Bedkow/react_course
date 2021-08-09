@@ -52,3 +52,7 @@ whenever you update state and have to depend on previous state
 React schedules state update so if u use the "bad" approach in line 19 of ExpenseForm, you may depend on an outdated state
 
 data binding
+
+props can only be passed from parent to child, cant skip components
+
+passing data up through props - passing a function from parent to child via props and calling the function in child with parameters
