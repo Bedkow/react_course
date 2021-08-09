@@ -50,3 +50,5 @@ even handler functions get the event value in function arguments
 possible to have multiple state pieces per component, can call useState multiple times, can use ONE state instead -> by passing an OBJECT as a value, and then have to update all values so they aren ot lost
 whenever you update state and have to depend on previous state
 React schedules state update so if u use the "bad" approach in line 19 of ExpenseForm, you may depend on an outdated state
+
+data binding
