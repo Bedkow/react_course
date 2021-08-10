@@ -56,3 +56,5 @@ data binding
 props can only be passed from parent to child, cant skip components
 
 passing data up through props - passing a function from parent to child via props and calling the function in child with parameters
+
+lifting state up - we cannot communicate between sibling components only child>parent/parent>child. To communicate between siblings, we have to communicate through the cosest parent of those siblings.
